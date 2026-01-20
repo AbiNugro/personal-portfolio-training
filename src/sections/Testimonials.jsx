@@ -1,5 +1,5 @@
 
 
 export const Testimonials = () => {
-    return <section></section>
+    return (<section></section>)
 }

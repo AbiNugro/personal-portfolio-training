@@ -3,6 +3,13 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from "@tailwindcss/vite"
 import path from 'path'
 
+// 1. Import this helper
+import { fileURLToPath } from 'url' 
+
+// 2. Derive __dirname
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],

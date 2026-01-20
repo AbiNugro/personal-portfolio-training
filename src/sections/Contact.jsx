@@ -1,5 +1,5 @@
 
 
 export const Contact = () => {
-    return <section></section>
+    return (<section></section>)
 }
