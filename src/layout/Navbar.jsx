@@ -6,7 +6,8 @@ const navLinks = [
     {href: "#about", label: "About"},
     {href: "#projects", label: "Projects"},
     {href: "#experience", label: "Experience"},
-    {href: "#testimonials", label: "Testimonials"}
+    {href: "#testimonials", label: "Testimonials"},
+    {href: "#contact", label: "Contact"}
 ];
 
 export const Navbar = () => {
@@ -26,7 +27,7 @@ export const Navbar = () => {
     return (
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3 shadow-md" : "bg-transparent py-5 shadow-none border-transparent"} z-50`}>
             <nav className="container mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
+                <a href="#" className="text-xl font-bold tracking-tight hover:text-primary transition-colors duration-300 ease-in-out">
                     AN<span className="text-primary">.</span>
                 </a>
 
@@ -43,7 +44,7 @@ export const Navbar = () => {
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <Button size="sm">
+                    <Button href="#contact" size="sm">
                         Contact Me
                     </Button>
                 </div>
@@ -67,7 +68,7 @@ export const Navbar = () => {
                             </a>
                         ))}
 
-                        <Button onClick={() => setIsMobileMenuOpen(false)}>
+                        <Button href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                             Contact Me
                         </Button>
                     </div>
